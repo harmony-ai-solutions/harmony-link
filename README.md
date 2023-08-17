@@ -90,6 +90,14 @@ Therefore, for all our current and future software offerings, we'll perform a co
 we can safely open source them in parts or even completely, as long as this appears to be non-harmful towards achieving
 the project's main goal.
 
+In case of Harmony Link however, we currently feel like open-sourcing our code and therefore know-how could harm the above goal.
+Once this Project and Harmony Link have matured some more, we will reconsider going full open source with it's code as well.
+
+Nevertheless, **Harmony Link itself will always be free of charge**.
+
+Also we're distributing the Binaries under the Apache 2 License, which allows everyone to use the software as part of their
+own projects without any restrictions from our side.
+
 Also, we're constantly striving to keep our software offerings as accessible as possible when it comes to services which
 cannot be run or managed by everyone - For example our Harmony Speech TTS Engine. As long as this project exists,
 we'll be trying out utmost to provide free tiers for personal and public research use of our software and APIs.
