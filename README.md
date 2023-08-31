@@ -28,10 +28,14 @@ Harmony Link, to minimize the uncanny valley.
 *For more details about the project as well as how you can support and get in touch with us, see*
 *[About Project Harmony.AI](#about-project-harmonyai) and [How to reach out](#how-to-reach-out-to-us) below.*
 
-## Announcements
+## Announcements & News
+- 2023-09-01: **Version 0.1.7-beta2** released with tons of fixes and Improvements. For the full list of updates see our
+  [Changelog](https://project-harmony.youtrack.cloud/articles/HARMONY-A-10/Releases-Changelog).
+- 2023-08-24: A lot of quality of Life Improvements have been applied to Harmony Link. Also we added a public
+  [Changelog](https://project-harmony.youtrack.cloud/articles/HARMONY-A-10/Releases-Changelog) for sharing details of this and further updates.
 - 2023-08-17: Closed Beta Nr. 2 launched! Please reach out via [Discord](https://discord.gg/f6RQyhNPX8) if you want to participate.
 - 2023-08-17: Also, our brand new [Patreon Page](https://patreon.com/harmony_ai) launched today. It will allow you to directly
-  support our project efforts if you find our software useful. 
+  support our project efforts if you find our software useful.
 
 ## Quickstart
 To get started quickly, please have a look at our [Quickstart guide](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart).
@@ -93,9 +97,9 @@ the project's main goal.
 In case of Harmony Link however, we currently feel like open-sourcing our code and therefore know-how could harm the above goal.
 Once this Project and Harmony Link have matured some more, we will reconsider going full open source with it's code as well.
 
-Nevertheless, **Harmony Link itself will always be free of charge**.
+Nevertheless, **Harmony Link itself will always be free of charge**. 
 
-Also we're distributing the Binaries under the Apache 2 License, which allows everyone to use the software as part of their
+Also we're distributing the Binaries under the Apache 2 License, which allows everyone to use the software as part of their 
 own projects without any restrictions from our side.
 
 Also, we're constantly striving to keep our software offerings as accessible as possible when it comes to services which

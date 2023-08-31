@@ -1,3 +1,90 @@
 # Harmony Link - Backend Modules Overview
 
-TBD - Coming Soon
+Harmony Link currently supports at least one backend module for each of the following tasks:
+
+[Large Language Model (LLM)](#large-language-model-llm-module): For conversational AI.
+
+[Text-To-Speech (TTS)](#text-to-speech-tts-module): For vocalizing written text. Integrates with LLM Module by default.
+
+[Speech-to-Text (STT)](#speech-to-text-stt-module): For text comprehension. Integrates with LLM Module by default.
+
+[Countenance Module](#countenance-module): For detecting and predicting moods and facial expressions in conversations. Integrates with LLM Module by default.
+
+
+## Large Language Model (LLM) Module
+Our LLM Backend Module - also just called backend module - Is the "brain" of each AI character. It's used for processing
+conversation and nonverbal interaction, and create verbal and non-verbal responses. Every action, communication and
+interaction between entities is internally translated to text by Harmony Link, and passed to the LLM backend.
+The results then will be shared amongst all other modules (if linked) for further processing.
+
+Currently, we're supporting the following LLM modules:
+
+### Kajiwoto
+https://kajiwoto.ai/
+
+Kajiwoto is a long time development partner of Project Harmony.AI and offers an incredible amount of features for creating
+realistic AI characters, including:
+
+- Multiple AI LLM Backends, including ChatGPT, Llama 2, Pygmalion, as well as Custom Models.
+- Character based Prompting and Personality definitions
+- Consistend long-term and short term memory for characters
+- Custom Dataset creation
+
+If you want to use Kajiwoto for your Harmony Link characters, just follow our
+[Quickstart Guide for Kajiwoto](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#kajiwoto-setup).
+
+### Oobabooga's text-generation-webui
+(Original Repo: https://github.com/oobabooga/text-generation-webui)
+
+Harmony.AI Version (required to work with Harmony Link): https://github.com/harmony-ai-solutions/text-generation-webui-harmony-ai
+
+The text-generation-webui is a de-facto open source standard for running any kind of LLM locally.
+Using it for realtime conversations with characters requires a powerful machine, otherwise conversation might be very 
+laggy.
+
+To work with Harmony Link's conversation History feature, we had to do some minor adaptions to the code. Also we're using
+Oobabooga as a backend solution for our Emotions API (Countenance module). 
+
+To use it for your Harmony Link characters, just follow our
+[Quickstart Guide for Textgen](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#oobabooga-textgen-setup-only-for-advances-users).
+
+
+## Text-To-Speech (TTS) Module
+The TTS module can be used to vocalize Texts using AI speech. By default it integrates with the LLM module and vocalizes
+the verbal part of the communication with an AI character controlled by Harmony Link.
+
+Currently, we're supporting the following TTS modules:
+
+### Harmony Speech V1
+Harmony Speech is our own custom TTS voice engine. It was designed to deliver good results in One-Shot Voice Cloning, and
+is capable of handling voice generation for hundreds of characters in parallel and faster than real time.
+
+It is already being used by Kajiwoto to power TTS for their AI characters at this point. Therefore, all AI voices created
+for Kajiwoto are by default compatible with Harmony Link as well.
+
+By default, Harmony Link uses Harmony Speech. To properly configure it and check out voices on Kajiwoto as well, check
+out our [Quickstart Guide for Harmony Speech](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#tts-using-harmony-speech).
+
+### Elevenlabs
+Elevenlabs is a very well known Provider for realistic and reliable TTS solutions. Their Bandwidth is usually quite limited
+in the free tiers, but therefore their generated voices sound extremely realistic and authentic.
+
+If you want to use Elevenlabs for your Harmony Link characters, just follow our
+[Quickstart Guide for Elevenlabs](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#tts-using-elevenlabs).
+
+## Speech-to-Text (STT) Module
+The STT module can be used to convert spoken speech into text. By default it integrates with the LLM module and allows
+AI controlled Characters to listen to user or other character's speech.
+
+Currently we only support STT as a sub-functionality of Harmony Speech; however we're going to add more backends soon.
+
+## Countenance Module
+The Countenance module is responsible for simulating a characters facial expressions and an overall stance in context of
+what's currently happening. It is planned to directly interface with future modules for AI movement and (nonverbal) Interaction
+with Human users or other AI.
+
+Currently we only support Countenance via our own Backend; however we're constantly investigating whether there are
+third-party solutions which might work as alternative and could be integrated in the future.
+
+---
+&copy; 2023 Harmony AI Solutions & Contributors
