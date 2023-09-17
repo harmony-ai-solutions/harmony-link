@@ -312,6 +312,39 @@ Result (Async)
 </details>
 
 <details>
+<summary>CHAT_HISTORY (Request chat history for current session)</summary>
+
+Request
+````json
+{
+  "event_id": "get_history_1234",
+  "event_type": "CHAT_HISTORY",
+  "status": "NEW",
+  "payload": null
+}
+````
+Result (Async)
+````json
+{
+  "event_id": "get_history_1234",
+  "event_type": "CHAT_HISTORY",
+  "status": "DONE",
+  "payload": [
+    {
+      "Name": "Tom (Human)",
+      "Message": "Hey, how are you my dear?"
+    },
+    {
+      "Name": "Vanessa (AI)",
+      "Message": "Hey Tom, I'm fine, how are you?"
+    },
+    ...
+  ]
+}
+````
+</details>
+
+<details>
 <summary>TTS_PLAYBACK_DONE (Tells Harmony Link to delete cached file)</summary>
 
 Request
@@ -328,6 +361,29 @@ Result (Async)
 {
   "event_id": "playback_123",
   "event_type": "TTS_PLAYBACK_DONE",
+  "status": "DONE",
+  "payload": null
+}
+````
+</details>
+
+<details>
+<summary>TTS_GENERATE_SPEECH (Make the character which is associated to the connected Harmony Session say something)</summary>
+
+Request
+````json
+{
+  "event_id": "speechgen_123",
+  "event_type": "TTS_GENERATE_SPEECH",
+  "status": "NEW",
+  "payload": "What's the airspeed velocity of an unladen swallow?"
+}
+````
+Result (Async)
+````json
+{
+  "event_id": "playback_123",
+  "event_type": "TTS_GENERATE_SPEECH",
   "status": "DONE",
   "payload": null
 }
@@ -405,6 +461,30 @@ Event by Harmony Link
     "emotional_state": "happy",
     "facial_expression": "happy_smile"
   }
+}
+````
+</details>
+
+<details>
+<summary>CHAT_HISTORY (Harmony Link pushes a chat history update)</summary>
+
+Event by Harmony Link
+````json
+{
+  "event_id": "get_history_1234",
+  "event_type": "CHAT_HISTORY",
+  "status": "DONE",
+  "payload": [
+    {
+      "Name": "Tom (Human)",
+      "Message": "Hey, how are you my dear?"
+    },
+    {
+      "Name": "Vanessa (AI)",
+      "Message": "Hey Tom, I'm fine, how are you?"
+    },
+    ...
+  ]
 }
 ````
 </details>

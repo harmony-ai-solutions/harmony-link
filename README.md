@@ -29,7 +29,7 @@ Harmony Link, to minimize the uncanny valley.
 *[About Project Harmony.AI](#about-project-harmonyai) and [How to reach out](#how-to-reach-out-to-us) below.*
 
 ## Announcements & News
-- 2023-09-01: **Version 0.1.7-beta2** released with tons of fixes and Improvements. For the full list of updates see our
+- 2023-09-17: **Version 0.1.8-beta2** released. For the full list of updates see our
   [Changelog](https://project-harmony.youtrack.cloud/articles/HARMONY-A-10/Releases-Changelog).
 - 2023-08-24: A lot of quality of Life Improvements have been applied to Harmony Link. Also we added a public
   [Changelog](https://project-harmony.youtrack.cloud/articles/HARMONY-A-10/Releases-Changelog) for sharing details of this and further updates.
