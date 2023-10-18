@@ -2,4 +2,4 @@
 
 ## Game Mod Integrations
 
-- [VNGE-Plugin for IllusionSoft Games]()
+- [VNGE-Plugin for IllusionSoft Games](https://github.com/harmony-ai-solutions/vnge-harmony-link-plugin)

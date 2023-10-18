@@ -33,6 +33,18 @@ realistic AI characters, including:
 If you want to use Kajiwoto for your Harmony Link characters, just follow our
 [Quickstart Guide for Kajiwoto](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#kajiwoto-setup).
 
+### Character AI
+https://beta.character.ai/
+
+Character AI (or just "cai"), is a rather new website for creating AI powered characters, which however got massively
+popular in a very short amount of time, due to it's simplicity and due to big names from Google behind it.
+It's not as flexible and detailed as Kajiwoto when it comes to character tweaking, also NSFW content is strongly filtered,
+however it offers a solid solution for creating realistic AI characters for conversation.
+
+*ATTENTION: Character AI support is currently experimental.*
+
+[Quickstart Guide for Character AI](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#character-ai-setup).
+
 ### Oobabooga's text-generation-webui
 (Original Repo: https://github.com/oobabooga/text-generation-webui)
 
