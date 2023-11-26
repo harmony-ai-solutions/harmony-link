@@ -45,6 +45,17 @@ however it offers a solid solution for creating realistic AI characters for conv
 
 [Quickstart Guide for Character AI](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#character-ai-setup).
 
+### OpenAI
+https://platform.openai.com/
+
+Character AI (or just "cai"), is a rather new website for creating AI powered characters, which however got massively
+popular in a very short amount of time, due to it's simplicity and due to big names from Google behind it.
+It's not as flexible and detailed as Kajiwoto when it comes to character tweaking, also NSFW content is strongly filtered,
+however it offers a solid solution for creating realistic AI characters for conversation.
+
+[Quickstart Guide for OpenAI's ChatGPT / GPT-4](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#openai-setup-with-chatgpt-35-or-gpt-4).
+[Quickstart Guide for OpenAI's Whisper](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#stt-using-openai-whisper).
+
 ### Oobabooga's text-generation-webui
 (Original Repo: https://github.com/oobabooga/text-generation-webui)
 
