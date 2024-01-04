@@ -12,10 +12,9 @@ distinct AI models.***
 It is optimized for best latency and processing times. Therefore, AI Agents using Harmony Link excell at
 tasks involving Real-Time-Conversation and simple use cases of Human <-to-> AI Interaction already today.
 
-We're still missing a proper showcasing video, however, you can get an Impression from this recent Developer VLOG:
-https://drive.google.com/file/d/13KTgbJuc-fSqjGG4Js1J7G6uubg3wxWt/view?usp=sharing
+If you're curious for a little demonstration, please check out our Tech Demo on Youtube:
 
-Towards the end of the Beta Phase, we're planning to create a more detailed Feature Showcase.
+[![Add Human-like AI Characters to ANY Game - BETA Tech Demo #1 - Project Harmony AI](https://img.youtube.com/vi/wcuvrr2QSNY/0.jpg)](https://www.youtube.com/watch?v=wcuvrr2QSNY)
 
 However, this is just a small fraction of features which we actually aim for with this project.
 Therefore, our current development efforts for Harmony Link aim towards adding additional capabilities of
@@ -29,8 +28,9 @@ Harmony Link, to minimize the uncanny valley.
 *[About Project Harmony.AI](#about-project-harmonyai) and [How to reach out](#how-to-reach-out-to-us) below.*
 
 ## Announcements & News
-- 2023-11-26: **Version 0.1.10** released, featuring OpenAI as a new Character Backend Option. For the full list of
-  updates see our [Changelog](https://project-harmony.youtrack.cloud/articles/HARMONY-A-10/Releases-Changelog).
+- 2024-01-04: Our new **[Youtube-Channel](https://www.youtube.com/@Harmony-AI)** including the first official Tech Demo
+  for Project Harmony is now live! Feel free to check it out.
+- 2023-12-24: **Version 0.1.11** released, featuring OpenAI as a new Character and STT Backend Options. For the full list of
 - 2023-10-01: Our official [Project Website](https://project-harmony.ai/) was launched. It's still missing some content,
   but finally we have an official Home on the Web. :-)
 - 2023-08-17: Our brand new [Patreon Page](https://patreon.com/harmony_ai) launched today. It will allow you to directly
@@ -40,7 +40,7 @@ Harmony Link, to minimize the uncanny valley.
 To get started quickly, please have a look at our [Quickstart guide](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart).
 
 ## Harmony Link - Technical Breakdown
-![Harmony Link Technical overview](docs/images/Harmony-Link.Rev3.drawio.png)
+![Harmony Link Technical overview](docs/images/Harmony-Link.Rev4.drawio.png)
 
 ### Modular AI Harmonization Layer
 
@@ -127,6 +127,6 @@ Contact us directly via: [contact@project-harmony.ai](mailto:contact@project-har
 
 
 ---
-&copy; 2023 Harmony AI Solutions & Contributors
+&copy; 2023-2024 Harmony AI Solutions & Contributors
 
 *Harmony Link Binaries are licensed and distributed under the Apache 2.0 License*

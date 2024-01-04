@@ -48,13 +48,11 @@ however it offers a solid solution for creating realistic AI characters for conv
 ### OpenAI
 https://platform.openai.com/
 
-Character AI (or just "cai"), is a rather new website for creating AI powered characters, which however got massively
-popular in a very short amount of time, due to it's simplicity and due to big names from Google behind it.
-It's not as flexible and detailed as Kajiwoto when it comes to character tweaking, also NSFW content is strongly filtered,
-however it offers a solid solution for creating realistic AI characters for conversation.
+OpenAI has become the go-to company when it comes to generative AI technology since their release of
+ChatGPT to the world in November 22 at the latest. Their AI Backends offer state-of-the-art performance
+and quality, and therefore we also integrated some of their services as a backend option into Harmony Link.
 
 [Quickstart Guide for OpenAI's ChatGPT / GPT-4](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#openai-setup-with-chatgpt-35-or-gpt-4).
-[Quickstart Guide for OpenAI's Whisper](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#stt-using-openai-whisper).
 
 ### Oobabooga's text-generation-webui
 (Original Repo: https://github.com/oobabooga/text-generation-webui)
@@ -62,11 +60,11 @@ however it offers a solid solution for creating realistic AI characters for conv
 Harmony.AI Version (required to work with Harmony Link): https://github.com/harmony-ai-solutions/text-generation-webui-harmony-ai
 
 The text-generation-webui is a de-facto open source standard for running any kind of LLM locally.
-Using it for realtime conversations with characters requires a powerful machine, otherwise conversation might be very 
+Using it for realtime conversations with characters requires a powerful machine, otherwise conversation might be very
 laggy.
 
 To work with Harmony Link's conversation History feature, we had to do some minor adaptions to the code. Also we're using
-Oobabooga as a backend solution for our Emotions API (Countenance module). 
+Oobabooga as a backend solution for our Emotions API (Countenance module).
 
 To use it for your Harmony Link characters, just follow our
 [Quickstart Guide for Textgen](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#oobabooga-textgen-setup-only-for-advances-users).
@@ -85,7 +83,7 @@ is capable of handling voice generation for hundreds of characters in parallel a
 It is already being used by Kajiwoto to power TTS for their AI characters at this point. Therefore, all AI voices created
 for Kajiwoto are by default compatible with Harmony Link as well.
 
-By default, Harmony Link uses Harmony Speech. To properly configure it and check out voices on Kajiwoto as well, check
+By default, Harmony Link uses Harmony Speech for TTS. To properly configure it and check out voices on Kajiwoto as well, check
 out our [Quickstart Guide for Harmony Speech](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#tts-using-harmony-speech).
 
 ### Elevenlabs
@@ -99,7 +97,20 @@ If you want to use Elevenlabs for your Harmony Link characters, just follow our
 The STT module can be used to convert spoken speech into text. By default it integrates with the LLM module and allows
 AI controlled Characters to listen to user or other character's speech.
 
-Currently we only support STT as a sub-functionality of Harmony Speech; however we're going to add more backends soon.
+### Harmony Speech V1
+Harmony Speech is our own custom TTS voice engine.
+It has a STT-Engine integrated which utilizes a self-hosted Whisper Server under the hood.
+
+By default, Harmony Link uses Harmony Speech for STT. To properly configure it and check out voices on Kajiwoto as well, check
+out our [Quickstart Guide for Harmony Speech](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#stt-using-harmony-speech).
+
+### OpenAI
+
+OpenAI has become the go-to company when it comes to generative AI technology since their release of
+ChatGPT to the world in November 22 at the latest. Their AI Backends offer state-of-the-art performance
+and quality, and therefore we also integrated some of their services as a backend option into Harmony Link.
+
+[Quickstart Guide for OpenAI's Whisper](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#stt-using-openai-whisper).
 
 ## Countenance Module
 The Countenance module is responsible for simulating a characters facial expressions and an overall stance in context of
