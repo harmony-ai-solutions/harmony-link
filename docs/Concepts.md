@@ -35,4 +35,4 @@ Also, in case your programming language or engine is not supported yet, it's sti
 API yourself. Check our [API Reference](Events-API.md) for more details.
 
 ---
-&copy; 2023 Harmony AI Solutions & Contributors
+&copy; 2023-2024 Harmony AI Solutions & Contributors

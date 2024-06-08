@@ -121,4 +121,4 @@ Currently we only support Countenance via our own Backend; however we're constan
 third-party solutions which might work as alternative and could be integrated in the future.
 
 ---
-&copy; 2023 Harmony AI Solutions & Contributors
+&copy; 2023-2024 Harmony AI Solutions & Contributors

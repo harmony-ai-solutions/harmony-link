@@ -18,6 +18,6 @@ In case you just want to run Harmony Link on your machine, just check out our [Q
 4. [List of available Harmony Link Plugins](Plugins.md)
 
 ---
-&copy; 2023 Harmony AI Solutions & Contributors
+&copy; 2023-2024 Harmony AI Solutions & Contributors
 
 *Harmony Link Binaries are licensed and distributed under the Apache 2.0 License*
