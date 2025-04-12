@@ -1,0 +1,74 @@
+openapi: 3.1.0
+info:
+  title: Harmony Link Result Server API
+  version: 1.0.0
+servers:
+  - url: http://{clientHost}:{clientPort}
+    variables:
+      clientHost:
+        default: localhost
+      clientPort:
+        default: '9000'  # Replace with the port your client listens on
+
+paths:
+  /:
+    post:
+      summary: Receive an event result from the Harmony Link Event Server
+      operationId: receiveEventResult
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/HarmonyLinkEvent'
+      responses:
+        '200':
+          description: Event result received successfully
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HarmonyLinkHttpError'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HarmonyLinkHttpError'
+
+components:
+  schemas:
+    HarmonyLinkEvent:
+      type: object
+      properties:
+        event_id:
+          type: string
+          description: Unique identifier for the event
+        event_type:
+          type: string
+          description: Type of the event
+        status:
+          type: string
+          description: Status of the event
+        payload:
+          type: object
+          description: Event-specific data
+      required:
+        - event_id
+        - event_type
+        - status
+        - payload
+
+    HarmonyLinkHttpError:
+      type: object
+      properties:
+        result:
+          type: string
+          description: Error code
+        params:
+          type: object
+          description: Additional error details
+      required:
+        - result
+        - params

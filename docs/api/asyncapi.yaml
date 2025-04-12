@@ -1,0 +1,63 @@
+asyncapi: '2.4.0'
+info:
+  title: Harmony Link Event Server WebSocket API
+  version: '1.0.0'
+servers:
+  production:
+    url: '{host}:{port}'
+    protocol: ws
+    description: Production WebSocket server
+    variables:
+      host:
+        default: localhost
+      port:
+        default: '8080'
+
+channels:
+  /:
+    description: WebSocket channel for bidirectional event communication
+    publish:
+      operationId: clientSendsEvent
+      summary: Client sends an event to the server
+      message:
+        $ref: '#/components/messages/HarmonyLinkEventMessage'
+    subscribe:
+      operationId: serverSendsEvent
+      summary: Server sends an event or response to the client
+      message:
+        $ref: '#/components/messages/HarmonyLinkEventMessage'
+
+components:
+  messages:
+    HarmonyLinkEventMessage:
+      name: HarmonyLinkEventMessage
+      title: Harmony Link Event Message
+      payload:
+        $ref: '#/components/schemas/HarmonyLinkEvent'
+
+  schemas:
+    HarmonyLinkEvent:
+      type: object
+      properties:
+        event_id:
+          type: string
+          description: Unique identifier for the event
+        event_type:
+          type: string
+          description: Type of the event
+        status:
+          type: string
+          description: Status of the event
+          enum:
+            - SUCCESS
+            - ERROR
+            - NEW
+            - PENDING
+        payload:
+          type: object
+          description: Event-specific data
+      required:
+        - event_id
+        - event_type
+        - status
+        - payload

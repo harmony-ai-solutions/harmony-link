@@ -18,10 +18,12 @@ to share it with the Harmony.AI community-
 Harmony Link currently offers both a Websocket and a HTTP Endpoint for Event processing.
 
 #### WebSocket
-WebSocket Support two-way-communication between Harmony Link and a client with one handler per connection. The recommended
-way to use the protocol is to process one character per WebSocket connection. However, it is theoretically also possible to
-handle multiple characters in a single connection. Yet this requires significant process management and Event ID handling
-overhead on the Plugin side. 
+The WebSocket Protocol allows for two-way-communication between Harmony Link and a client with one internal handler per connection.
+The recommended way to use the protocol is to process one character per WebSocket connection. 
+Despite it is theoretically also possible to handle multiple characters in a single connection, this is not recommended,
+since that requires additional process management and Event ID handling overhead on the Plugin side.
+
+An AsyncAPI specification to generate clients for the WebSocket API is provided here: [Harmony Link WebSocket API](api/asyncapi.yaml).
 
 #### HTTP
 The HTTP Endpoint is considered legacy, since it's slightly less performant than the WebSocket Communication. Increased 
@@ -34,6 +36,10 @@ Using the HTTP Endpoint requires an async handshake between Plugin and Harmony L
 match individual sessions. Also, it is required for the plugin to manage it's own HTTP Handler / Server, and each 
 request must provide the Header Value `Harmony-Result-Port`, so Harmony Link knows on which Port the Plugin is currently
 listening.
+
+We provide OpenAPI Specifications for generating both an Event Sender Client and an Event Retriever Server:
+* [Harmony Link Event Sender Client API](api/openapi-sender-client.yaml)
+* [Harmony Link Event Receiver Server API](api/openapi-reciever-server.yaml)
 
 ### Events
 Harmony Link's Events API uses a single Data type: `HarmonyLinkEvent`

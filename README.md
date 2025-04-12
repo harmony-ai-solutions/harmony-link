@@ -27,7 +27,14 @@ Harmony Link, to minimize the uncanny valley.
 *For more details about the project as well as how you can support and get in touch with us, see*
 *[About Project Harmony.AI](#about-project-harmonyai) and [How to reach out](#how-to-reach-out-to-us) below.*
 
+A tutorial video with basic setup instructions can be found here:
+
+[![Harmony AI - Basic Setup Tutorial for Harmony Link AI Character Middleware](https://img.youtube.com/vi/ux9HdsStE_E/0.jpg)](https://www.youtube.com/watch?v=ux9HdsStE_E)
+
 ## Announcements & News
+- 2025-04-12: **Version 0.2.1** released, including a brand new Speech Inference Engine, fully local AI setup using docker,
+  open sourcing of our Harmony Speech V1 model, and a new Plugin for VTube Studio. For the full list of updates see our
+  [Changelog](https://project-harmony.youtrack.cloud/articles/HARMONY-A-10/Releases-Changelog).
 - 2024-06-08: **Version 0.2.0** released, featuring a new Config UI, improved Speech-To-Text under Windows, and basic Movement
   API support on Harmony-Link side. For the full list of updates see our
   [Changelog](https://project-harmony.youtrack.cloud/articles/HARMONY-A-10/Releases-Changelog).
@@ -39,10 +46,10 @@ Harmony Link, to minimize the uncanny valley.
   support our project efforts if you find our software useful.
 
 ## Quickstart
-To get started quickly, please have a look at our [Quickstart guide](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart).
+To get started quickly, please have a look at our [Quickstart guide](https://project-harmony.youtrack.cloud/articles/HARMONY-A-11/Getting-Started).
 
 ## Harmony Link - Technical Breakdown
-![Harmony Link Technical overview](docs/images/Harmony-Link.Rev4.drawio.png)
+![Harmony Link Technical overview](docs/images/Harmony-Link.Rev5.drawio.png)
 
 ### Modular AI Harmonization Layer
 

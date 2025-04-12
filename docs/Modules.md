@@ -31,7 +31,7 @@ realistic AI characters, including:
 - Custom Dataset creation
 
 If you want to use Kajiwoto for your Harmony Link characters, just follow our
-[Quickstart Guide for Kajiwoto](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#kajiwoto-setup).
+[Quickstart Guide for Kajiwoto](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Module-Settings-Backend#kajiwoto).
 
 ### Character AI
 https://beta.character.ai/
@@ -43,7 +43,19 @@ however it offers a solid solution for creating realistic AI characters for conv
 
 *ATTENTION: Character AI support is currently experimental.*
 
-[Quickstart Guide for Character AI](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#character-ai-setup).
+[Quickstart Guide for Character AI](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Module-Settings-Backend#character-ai).
+
+### Kindroid
+https://landing.kindroid.ai/
+
+Kindroid is an app for creating AI companions. It's overall premise is quite similar to Kajiwoto, however their model quality
+and development team is significantly larger and they have more development resources and powerful AI hardware at their hands,
+allowing them to provide advanced features like video calls, image generation and animated in-app avatars, yet their
+app doesn't feature as much customization features as Kajiwoto at the moment.
+
+*ATTENTION: Kindroid AI support is currently experimental and not many features are provided by their official API currently.*
+
+[Quickstart Guide for Character AI](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Module-Settings-Backend#kindroid-ai).
 
 ### OpenAI
 https://platform.openai.com/
@@ -52,7 +64,7 @@ OpenAI has become the go-to company when it comes to generative AI technology si
 ChatGPT to the world in November 22 at the latest. Their AI Backends offer state-of-the-art performance
 and quality, and therefore we also integrated some of their services as a backend option into Harmony Link.
 
-[Quickstart Guide for OpenAI's ChatGPT / GPT-4](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#openai-setup-with-chatgpt-35-or-gpt-4).
+[Quickstart Guide for OpenAI's ChatGPT / GPT-4](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Module-Settings-Backend#openai).
 
 ### Oobabooga's text-generation-webui
 (Original Repo: https://github.com/oobabooga/text-generation-webui)
@@ -60,14 +72,14 @@ and quality, and therefore we also integrated some of their services as a backen
 Harmony.AI Version (required to work with Harmony Link): https://github.com/harmony-ai-solutions/text-generation-webui-harmony-ai
 
 The text-generation-webui is a de-facto open source standard for running any kind of LLM locally.
-Using it for realtime conversations with characters requires a powerful machine, otherwise conversation might be very
+Using it for realtime conversations with characters requires a powerful machine, otherwise conversation might be very 
 laggy.
 
 To work with Harmony Link's conversation History feature, we had to do some minor adaptions to the code. Also we're using
-Oobabooga as a backend solution for our Emotions API (Countenance module).
+Oobabooga as a backend solution for our Emotions API (Countenance module). 
 
 To use it for your Harmony Link characters, just follow our
-[Quickstart Guide for Textgen](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Quickstart#oobabooga-textgen-setup-only-for-advances-users).
+[Quickstart Guide for Textgen](https://project-harmony.youtrack.cloud/articles/HARMONY-A-7/Module-Settings-Backend#text-generation-webui-only-for-advances-users).
 
 
 ## Text-To-Speech (TTS) Module

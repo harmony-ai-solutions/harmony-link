@@ -1,0 +1,107 @@
+openapi: 3.1.0
+info:
+  title: Harmony Link Event Server API
+  version: 1.0.0
+servers:
+  - url: http://{host}:{port}
+    description: HTTP server for event submission
+    variables:
+      host:
+        default: localhost
+      port:
+        default: '8080'
+
+paths:
+  /:
+    post:
+      summary: Send an event to the Harmony Link Event Server
+      operationId: sendEvent
+      parameters:
+        - in: header
+          name: Harmony-Session-Id
+          schema:
+            type: string
+          required: false
+          description: Session ID for the HTTP session. Omit to create a new session.
+        - in: header
+          name: Harmony-Result-Port
+          schema:
+            type: string
+          required: false
+          description: >
+            Port number where the client listens for result events. Required when initiating a new session.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/HarmonyLinkEvent'
+      responses:
+        '200':
+          description: Event accepted for processing
+          headers:
+            Harmony-Session-Id:
+              schema:
+                type: string
+              description: The session ID for the current session
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Event accepted for processing."
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HarmonyLinkHttpError'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HarmonyLinkHttpError'
+
+components:
+  schemas:
+    HarmonyLinkEvent:
+      type: object
+      properties:
+        event_id:
+          type: string
+          description: Unique identifier for the event
+        event_type:
+          type: string
+          description: Type of the event
+        status:
+          type: string
+          description: Status of the event
+          enum:
+            - SUCCESS
+            - ERROR
+            - NEW
+            - PENDING
+        payload:
+          type: object
+          description: Event-specific data
+      required:
+        - event_id
+        - event_type
+        - status
+        - payload
+
+    HarmonyLinkHttpError:
+      type: object
+      properties:
+        result:
+          type: string
+          description: Error code
+        params:
+          type: object
+          description: Additional error details
+      required:
+        - result
+        - params
